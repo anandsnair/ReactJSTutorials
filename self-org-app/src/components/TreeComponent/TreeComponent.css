@@ -1,0 +1,17 @@
+.Tree {
+    height: 13%;
+    width: 50%;
+    background: #1abc9c;
+    border-radius: 0 0 30px 30px;
+    box-shadow: inset -15px 0 #1abc9c;
+    margin: 2% auto;
+    padding:20px;
+}
+.TreePara {
+    height: 13%;
+    width: 50%;
+    background: linear-gradient(#F08E4A, #e27b36);
+    border-radius: 0 0 90px 90px;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 2% auto;
+}

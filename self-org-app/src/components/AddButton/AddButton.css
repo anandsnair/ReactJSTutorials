@@ -1,0 +1,16 @@
+.inputArea {
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    margin-left: 100px;
+    background-color:white;
+    color:black
+
+}
+.button {
+    background-color:#2ecc71;
+    color:white;
+    height: 40px;
+    margin-left: 10px;
+}

@@ -95,7 +95,7 @@ class BurgerBuilder extends Component {
 
     continuePurchaseHandler = () => {
         this.setState({loading:true});
-        const order = {
+        /*const order = {
             ingredients : this.state.ingredients,
             price : this.state.totalPrice,
             customer : {
@@ -119,7 +119,17 @@ class BurgerBuilder extends Component {
             this.setState({loading:false,
                 purchasing:false});
             console.log(error);
-        });
+        });*/
+        console.log(this.props);
+        let queryParams = [];
+        for( let i in this.state.ingredients) {
+            queryParams.push(encodeURIComponent(i)+'='+encodeURIComponent(this.state.ingredients[i]));
+        }
+        const queryString = queryParams.join('&');
+        this.props.history.push( {
+            pathname: '/checkout',
+            search: '?'+queryString
+        })
     }
 
     render() {
